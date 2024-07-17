@@ -1,0 +1,16 @@
+<p>add-user works!</p>
+<form (ngSubmit)="addUser()">
+    <mat-form-field>
+      <input matInput placeholder="User Name" [(ngModel)]="userName" name="userName" required>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Workout Type" [(ngModel)]="workoutType" name="workoutType" required>
+        <mat-option *ngFor="let type of workoutTypes" [value]="type">{{type}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" placeholder="Workout Minutes" [(ngModel)]="workoutMinutes" name="workoutMinutes" required>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Add Workout</button>
+  </form>
+  

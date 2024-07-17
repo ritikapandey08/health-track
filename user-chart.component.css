@@ -1,0 +1,12 @@
+/* src/app/user-chart/user-chart.component.css */
+.chart-container {
+    position: relative; /* Ensures the canvas is positioned relative to this container */
+  }
+  
+  #userChart {
+    background-image: url('Health-Tracking-apps.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire canvas area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+  }
+  
